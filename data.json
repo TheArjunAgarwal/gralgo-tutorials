@@ -8,7 +8,10 @@
       "TA": "Arjun, Vardhan",
       "description":"We discuss Asymptotic Analysis and introduce Graph Theory. Also, first (graded) quiz of the course.",
       "resources": [
-        {"name": "Lecture Notes", "label": "PDF", "link": "tutorial-1/tut1.pdf"}
+        {"name": "Presentation", "label": "PDF", "link": "tutorial-1/tut1-pres.pdf"},
+        {"name": "Lecture Notes", "label": "PDF", "link": "tutorial-1/tut1.pdf"},
+        {"name": "Quiz 1", "label": "PDF", "link": "tutorial-1/quiz1.pdf"},
+        {"name": "Quiz 1 Solutions", "label": "PDF", "link": "tutorial-1/quiz1-ans.pdf"}
       ]
     }
   ]
