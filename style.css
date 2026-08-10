@@ -1,0 +1,127 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background-color: #f7f1e3; /* cream */
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    padding: 40px 20px;
+}
+
+header {
+    border-bottom: 1px solid #ddd5c5;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid #e5dece;
+    padding-bottom: 10px;
+}
+
+.lecture-card {
+    background: #fffdf8;
+    border: 1px solid #ded6c6;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+    scroll-margin-top: 20px;
+}
+
+.lecture-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0;
+    color: #111;
+}
+
+.meta {
+    color: #176b68; /* accent */
+    font-weight: 500;
+    margin: 8px 0 20px 0;
+    font-size: 0.95rem;
+}
+
+.section-label {
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+li {
+    margin: 6px 0;
+    font-size: 0.95rem;
+}
+
+a {
+    color: #176b68; /* same accent */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #125653;
+}
+
+.code-link {
+    font-family: monospace;
+    background: #eee9dc;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.lecture-description {
+    margin: 10px 0;
+    color: #444;
+    line-height: 1.5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.lecture-card:target {
+    border-color: #176b68; /* accent */
+    background: #f4faf8;
+    box-shadow: 0 0 0 3px rgba(23, 107, 104, 0.15);
+}
+
+.permalink {
+    margin-left: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    color: #176b68;
+}
+
+.lecture-title:hover .permalink {
+    opacity: 0.5;
+}
+
+.permalink:hover {
+    opacity: 1;
+}

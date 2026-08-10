@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorials | GRAL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1 id="course-title">Course loading...</h1>
+    </header>
+
+    <main>
+        <h2>General Information</h2>
+
+        <ul>
+            <li><b>TAs</b>: Arjun Maneesh Agarwal, Vardhan Kumar Ray</li>
+            <li><b>Time</b>: 3:30 pm to 5:00 pm, Mondays</li>
+            <li><b>Venue</b>: Room 801</li>
+        </ul>
+
+        <p>
+            The tutorials will usually involve a discussion of topics in algorithms in the neighborhood of the course,
+            discussion of assignments and doubt solving and revision of material covered in class.
+        </p>
+
+        <p>
+            Due to the overenthusiasm of TAs, topics beyond the scope of the course may be covered in the tutorials.
+            While not "useless", they are not relevant to your performance in the course. These topics solely exist to
+            pique your interest in the field as well as to make you a better rounded algorithmist.
+        </p>
+        
+        <h2>Tutorials</h2>
+
+        <div id="lecture-list"></div>
+    </main>
+</div>
+
+<script>
+async function loadLectures() {
+    try {
+        const response = await fetch("data.json");
+        const data = await response.json();
+
+        document.getElementById("course-title").textContent = data.courseTitle;
+
+        const list = document.getElementById("lecture-list");
+
+        data.lectures.forEach(lec => {
+
+            const resourceItems = lec.resources.map(res =>
+                `<li>${res.name}: [<a href="${res.link}">${res.label}</a>]</li>`
+            ).join("");
+
+            list.insertAdjacentHTML("beforeend", `
+                <div class="lecture-card" id="tutorial-${lec.id}">
+                    <div class="lecture-title">
+                        Tutorial ${lec.id}: ${lec.title}
+                        <button
+                            class="permalink"
+                            data-id="tutorial-${lec.id}"
+                            title="Copy link"
+                        >
+                            🔗
+                        </button>
+                    </div>
+
+                    <div class="meta">${lec.date} (${lec.TA})</div>
+
+                    ${lec.description
+                        ? `<p class="lecture-description">${lec.description}</p>`
+                        : ""
+                    }
+
+                    <span class="section-label">Resources</span>
+                    <ul>${resourceItems}</ul>
+                </div>
+            `);
+        });
+
+        // Scroll to hash after content loads
+        if (window.location.hash) {
+            const target = document.querySelector(window.location.hash);
+
+            if (target) {
+                setTimeout(() => {
+                    target.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    });
+                }, 50);
+            }
+        }
+
+    } catch (e) {
+        console.error("Error loading JSON:", e);
+    }
+}
+
+loadLectures();
+
+document.addEventListener("click", async (e) => {
+
+    const btn = e.target.closest(".permalink");
+
+    if (!btn) return;
+
+    e.preventDefault();
+
+    const id = btn.dataset.id;
+
+    const url = `${location.origin}${location.pathname}#${id}`;
+
+    try {
+        await navigator.clipboard.writeText(url);
+
+        history.replaceState(null, "", "#" + id);
+
+        document.getElementById(id).scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+
+        const old = btn.textContent;
+        btn.textContent = "✅";
+
+        setTimeout(() => {
+            btn.textContent = old;
+        }, 1200);
+
+    } catch (err) {
+        console.error(err);
+    }
+});
+</script>
+
+</body>
+</html>

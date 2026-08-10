@@ -1,0 +1,15 @@
+{
+  "courseTitle": "Graduate Algorithms Tutorials",
+  "lectures": [
+    {
+      "id": 1,
+      "title": "Introduction and Math for Algorithms (Big Oh and Basic Graph Theory)",
+      "date": "Mon, Aug 10",
+      "TA": "Arjun, Vardhan",
+      "description":"We discuss Asymptotic Analysis and introduce Graph Theory. Also, first (graded) quiz of the course.",
+      "resources": [
+        {"name": "Lecture Notes", "label": "PDF", "link": "tutorial-1/tut1.pdf"}
+      ]
+    }
+  ]
+}
