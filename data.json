@@ -11,7 +11,8 @@
         {"name": "Presentation", "label": "PDF", "link": "tutorial-1/tut1-pres.pdf"},
         {"name": "Lecture Notes", "label": "PDF", "link": "tutorial-1/tut1.pdf"},
         {"name": "Quiz 1", "label": "PDF", "link": "tutorial-1/quiz1.pdf"},
-        {"name": "Quiz 1 Solutions", "label": "PDF", "link": "tutorial-1/quiz1-ans.pdf"}
+        {"name": "Quiz 1 Solutions", "label": "PDF", "link": "tutorial-1/quiz1-ans.pdf"},
+        {"name": "Practice Sheet 1", "label": "PDF", "link": "tutorial-1/practice-sheet1.pdf"}
       ]
     }
   ]
