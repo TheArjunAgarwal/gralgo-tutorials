@@ -1,0 +1,22 @@
+\frametitle{Counting Sort with Key}
+\begin{pseudobox}{Counting Sort with Key}
+\item func counting\_sort\_with\_key(A, k):
+  \begin{enumerate}[label=\alph*.,leftmargin=1.4em,itemsep=0pt]
+  \item count $\leftarrow$ array of k 0s
+  \item for (a, b) in A:
+    \begin{enumerate}[label=\roman*.,leftmargin=1.4em,itemsep=0pt]
+    \item count[b] += 1
+    \end{enumerate}
+  \item ans $\leftarrow$ empty array of length equal to $A$
+  \item ind = 0
+  \item for i in range(k):
+    \begin{enumerate}[label=\roman*.,leftmargin=1.4em,itemsep=0pt]
+    \item for j in range(count[i]):
+      \begin{enumerate}[label=--,leftmargin=1.4em,itemsep=0pt]
+      \item ans[ind] = (a, i)
+      \item ind += 1
+      \end{enumerate}
+    \end{enumerate}
+  \item return ans
+  \end{enumerate}
+\end{pseudobox}
