@@ -6,13 +6,25 @@
       "title": "Introduction and Math for Algorithms (Big Oh and Basic Graph Theory)",
       "date": "Mon, Aug 10",
       "TA": "Arjun, Vardhan",
-      "description":"We discuss Asymptotic Analysis and introduce Graph Theory. Also, first (graded) quiz of the course.",
+      "description":"We discuss Asymptotic Analysis and introduce Graph Theory. Also, first quiz (not for grade) of the course.",
       "resources": [
         {"name": "Presentation", "label": "PDF", "link": "tutorial-1/tut1-pres.pdf"},
         {"name": "Lecture Notes", "label": "PDF", "link": "tutorial-1/tut1.pdf"},
         {"name": "Quiz 1", "label": "PDF", "link": "tutorial-1/quiz1.pdf"},
         {"name": "Quiz 1 Solutions", "label": "PDF", "link": "tutorial-1/quiz1-ans.pdf"},
         {"name": "Practice Sheet 1", "label": "PDF", "link": "tutorial-1/practice-sheet1.pdf"}
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Binary Search and Radix Sort",
+      "date": "Mon, Aug 17",
+      "TA": "Arjun, Vardhan",
+      "description":"We discussed introduced and did some questions on binary search and then discussed radix sort. First graded quiz of the course.",
+      "resources": [
+        {"name": "Lecture Notes", "label": "PDF", "link": "tutorial-2/tut2.pdf"},
+        {"name": "Quiz 2", "label": "PDF", "link": "tutorial-2/quiz2.pdf"},
+        {"name": "Quiz 2 Solutions", "label": "PDF", "link": "tutorial-2/quiz2-ans.pdf"}
       ]
     }
   ]
