@@ -268,21 +268,22 @@ We begin by first making modifications to our previous code to create `counting_
 
 #psudo(title: "Counting Sort with Key")[
 + func counting_sort_with_key(A, k):
-  + count $<-$ array of k 0s
+  + count $<-$ array of $emptyset$
   + for (a, b) in A:
-    + count[b] += 1
+    + count[b] = count[b] $union {a}$
   + ans $<-$ empty array of length equal to $A$
   + ind = 0
   + for i in range(k):
-    + for j in range(count[i]):
-      + ans[ind] = (a, i)
+    + for j in count[k - 1 - i]:
+      + ans[ind] = (j, i)
       + ind += 1
-  + retun ans
+  + retun reverse(ans)
 ]
 
 #definition(title: "Radix Sort")[
   Radix sort is a sorting algorithm which sorts a list of integers digit by digit, starting from the least significant digit; maintaining stability in subsequent sorts.
 ]
+
 For example, if we had to sort:
 $
 853, 872, 265, 238, 199, 772, 584, 204, 480, 173,\
@@ -311,7 +312,7 @@ $
 ]
 So how do we quickly sort the numbers by the last places? Use it as a key and use `counting_sort_with_key`.
 
-This would have a time complexity of $O(n log_10(M))$. We can do a bit better by choosing a relevent base. That would lead to a time complexity of $O(n log_n(M)) = O(n log(M)/log(n))$.
+This would have a time complexity of $O(n log_10(M))$. We can do a bit better by choosing an optimal base. That would lead to a time complexity of $O(n log_n(M)) = O(n log(M)/log(n))$.
 
 === $suit.spade$ Survey of Sorting Algorithms
 In this survey, we will consider the optimal data structures. We might discuss some of these later.
@@ -332,7 +333,7 @@ We will let $w = log(M)$
 
 An open question is if it is possible to do sorting in $cal(O)(n)$. For example, if $w = Omega (log(n)) => "Radix Sort is" cal(O)(n)$.
 
-What about smaller $w$? This was given by Andersson et. al. where $cal(O)(n)$ is achived for $w = cal(O)(n^(1/2 - epsilon))$.#footnote[One can also see the complexity when $log^(2+epsilon) w > n$ in the table. The middle cases are where a complex complexity (pun intended) form with $w$ and $n$ can be obtained.]
+What about smaller $w$? This was given by Andersson et. al. where $cal(O)(n)$ is achieved for $w = cal(O)(n^(1/2 - epsilon))$.#footnote[One can also see the complexity when $log^(2+epsilon) w > n$ in the table. The middle cases are where a complex complexity (pun intended) form with $w$ and $n$ can be obtained.]
 
 Belazzougui et. al. in 2014 gave a way to sort in $cal(O)(n)$ for $w = Omega(log^2(n) log log n)$. Their algorithm, called Packed Sort, works normally close to $cal(O)(n log n)$ but in certain cases becomes much faster.
 
