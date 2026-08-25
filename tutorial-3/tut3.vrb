@@ -1,0 +1,6 @@
+\frametitle{Carnival (CEIO 2014)}
+
+Each of Peter's $N$ friends (numbered from $1$ to $N$) bought exactly one carnival costume in order to wear it at this year's carnival parties. There are $C$ different kinds of costumes, numbered from $1$ to $C$. Some of Peter's friends, however, might have bought the same kind of costume. Peter would like to know which of his friends bought the same costume. For this purpose, he organizes some parties, to each of which he invites some of his friends.
+
+Peter knows that on the morning after each party he will not be able to recall which costumes he will have seen the night before, but only how many different kinds of costumes he will have seen at the party. Peter wonders if he can nevertheless choose the guests of each party such that he will know in the end, which of his friends had the same kind of costume. Help Peter!
+

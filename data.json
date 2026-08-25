@@ -20,11 +20,33 @@
       "title": "Binary Search and Radix Sort",
       "date": "Mon, Aug 17",
       "TA": "Arjun, Vardhan",
-      "description":"We discussed introduced and did some questions on binary search and then discussed radix sort. First graded quiz of the course.",
+      "description":"We discussed introduced and did some questions on binary search and then discussed radix sort. First graded quiz (second overall) of the course.",
       "resources": [
         {"name": "Lecture Notes", "label": "PDF", "link": "tutorial-2/tut2.pdf"},
         {"name": "Quiz 2", "label": "PDF", "link": "tutorial-2/quiz2.pdf"},
         {"name": "Quiz 2 Solutions", "label": "PDF", "link": "tutorial-2/quiz2-ans.pdf"}
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Problem Solving Session 1",
+      "date": "Mon, Aug 24",
+      "TA": "Arjun, Vardhan",
+      "description":"We discussed problems in the first problem sheet as well as some extensions.",
+      "resources": [
+        {"name": "Problem Sheet 1", "label": "PDF", "link": "tutorial-3/problem-sheet-1.pdf"},
+        {"name": "Problem Sheet 1 Solutions", "label": "PDF", "link": "tutorial-3/problem-sheet-1-ans.pdf"}
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Quiz 3 and FFT",
+      "date": "Tue, Aug 25",
+      "TA": "Arjun, Vardhan",
+      "description":"We had Quiz 3 and then discussed FFT in remaining time.",
+      "resources": [
+        {"name": "Quiz 3", "label": "PDF", "link": "tutorial-4/quiz3.pdf"},
+        {"name": "Quiz 3 Solutions", "label": "PDF", "link": "tutorial-4/quiz3-ans.pdf"}
       ]
     }
   ]
