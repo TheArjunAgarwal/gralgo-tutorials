@@ -48,6 +48,17 @@
         {"name": "Quiz 3", "label": "PDF", "link": "tutorial-4/quiz3.pdf"},
         {"name": "Quiz 3 Solutions", "label": "PDF", "link": "tutorial-4/quiz3-ans.pdf"}
       ]
+    },
+    {
+      "id": 5,
+      "title": "Divide And Conquer",
+      "date": "Mon, Sep 7",
+      "TA": "Arjun",
+      "description":"We discussed the problems on problem set 2. The theme was Divide and Conquer.",
+      "resources": [
+        {"name": "Problem Set 2", "label": "PDF", "link": "tutorial-5/problem-sheet-2.pdf"},
+        {"name": "Problem Sheet 2 Solutions", "label": "PDF", "link": "tutorial-5/problem-sheet-2-ans.pdf"}
+      ]
     }
   ]
 }

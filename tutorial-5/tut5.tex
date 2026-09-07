@@ -1,0 +1,227 @@
+\documentclass{beamer}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\title{Tutorial 5}
+\subtitle{Graduate Algorithms}
+\date{}
+\author{}
+
+\begin{document}
+
+\frame{\titlepage}
+
+% Question 1: Counting Inversions
+\begin{frame}[fragile]
+\frametitle{Question 1: Counting Inversions}
+
+Given an (1-indexed) array $A$ of $n$ distinct integers, give an algorithm to count the number of inversions in $O(n \log n)$ time.
+
+\vspace{0.5cm}
+
+An inversion is a pair of $i,j$ such that:
+\begin{itemize}
+\item $1 \le i < j \le n$
+\item $A[i] > A[j]$
+\end{itemize}
+
+\vspace{0.5cm}
+
+\textbf{Hint:} Consider a function 
+\begin{verbatim}
+def inversions(A: list[int]) -> 
+              tuple[int, list[int]]
+\end{verbatim}
+where we are returning both the number of inversions and sorted list $A$.
+
+\end{frame}
+
+\begin{frame}
+\end{frame}
+
+\begin{frame}
+\end{frame}
+
+% Question 2: Strassen's Algorithm
+\begin{frame}[fragile]
+\frametitle{Question 2: Strassen's Algorithm}
+
+Given two $n \times n$ matrices $A$ and $B$, compute their product $AB$ in time $O(n^{\log_2 7})$.
+
+\vspace{0.3cm}
+
+\textbf{Part 1:} Assuming $m \ge n$, find an $O(m^2 n^{0.81})$ algorithm to multiply $A$ ($m \times n$) and $B$ ($n \times m$) using the above as a subroutine. 
+\textit{Hint: Multiply $\lceil m/n \rceil^2$ pairs of order-$n$ matrices}
+
+\vspace{0.3cm}
+
+\textbf{Part 2:} Assuming $m \ge n \ge t$, find an $O(mnt^{0.81})$ algorithm to multiply $A$ ($m \times n$) and $B$ ($n \times t$) using the above as a subroutine. 
+\textit{Hint: Multiply pairs of $t \times t$ matrices}
+
+\end{frame}
+
+\begin{frame}
+\end{frame}
+
+\begin{frame}
+\end{frame}
+
+% Question 3: Merging Arrays
+\begin{frame}
+\frametitle{Question 3: Merging Arrays}
+
+Let $A_1, A_2, \ldots, A_k$ be $k$ arrays, each of which has been sorted.
+
+\vspace{0.3cm}
+
+These arrays are mutually disjoint, namely, no integer can appear in more than one array.
+
+\vspace{0.3cm}
+
+Design an algorithm to merge the $k$ arrays into one sorted array in $O(n \log k)$ time, where $n$ is the total length of the $k$ arrays.
+
+\vspace{0.3cm}
+
+\textbf{Note:} These arrays may have different lengths.
+
+\end{frame}
+
+\begin{frame}
+\end{frame}
+
+\begin{frame}
+\end{frame}
+
+% Question 4: Max Weight Subarray
+\begin{frame}
+\frametitle{Question 4: Max Weight Subarray}
+
+Let $A$ be an array of $n$ integers ($A$ is not necessarily sorted). Each integer in $A$ may be positive or negative.
+
+Given $i, j$ satisfying $1 \le i \le j \le n$, define sub-array $A[i:j]$ as the sequence $(A[i], A[i+1], \ldots, A[j])$, and the weight as $A[i] + A[i+1] + \cdots + A[j]$.
+
+\vspace{0.3cm}
+
+\textbf{Example:} $A = (13, -3, -25, 20, -3, -16, -23, 18)$; $A[1:4]$ has weight $5$; $A[2:4]$ has weight $-8$.
+
+\vspace{0.3cm}
+
+\textbf{(a)} Find a sub-array with largest weight among all $A[i:j]$ with $j = n$ in $O(n)$ time.
+
+\vspace{0.2cm}
+
+\textbf{(b)} Find a sub-array with largest weight in $O(n \log n)$ time (among all possible sub-arrays).
+
+\end{frame}
+
+\begin{frame}
+\end{frame}
+
+\begin{frame}
+\end{frame}
+
+% Question 5: L Tiles
+\begin{frame}
+\frametitle{Question 5: L Tiles}
+
+Given a grid of $2^N \times 2^N$, all cells are initially empty except one cell. Let the blocked cell be $B$.
+
+\vspace{0.3cm}
+
+Write an algorithm to figure out a way to fill the grid with L shapes (without overlapping other tiles or $B$) or report ``NO'' if that is not possible. Your algorithm should run in $O(4^N)$.
+
+\vspace{0.3cm}
+
+The $N = 2, B = (3,2)$ case is shown in the problem document.
+
+\vspace{0.3cm}
+
+\textbf{Hint:} We never have to return ``NO''.
+
+\end{frame}
+
+\begin{frame}
+\end{frame}
+
+\begin{frame}
+\end{frame}
+
+% Question 6: Big Mod
+\begin{frame}[fragile]
+\frametitle{Question 6: Big Mod}
+
+Given $p$, $e$, $b$, compute $p^e \bmod b$ in $O(\log e)$ time.
+
+\end{frame}
+
+\begin{frame}
+\end{frame}
+
+\begin{frame}
+\end{frame}
+
+% Question 7: DeadShot
+\begin{frame}[fragile]
+\frametitle{Question 7: DeadShot (DS Algo Mock-Midsem 2026)}
+
+To celebrate the end of midsems, a group of students head to the CLAB to play Deadshot.io. There are $n$ players, and the $i$-th player has a skill score of $A[i]$.
+
+They want to split into two teams. Rules:
+\begin{itemize}
+\item Team Kabir must have a total skill score $\ge$ Team Piyush
+\item The difference between team scores should be as small as possible
+\end{itemize}
+
+Write a function \texttt{balanced\_teams(A)} that returns the minimum possible difference between the total skill scores in $O(n 2^{n/2})$ time.
+
+\vspace{0.3cm}
+
+\textbf{Hint:} The intended solution uses $O(2^{n/2})$ space as we need \textit{two} arrays of that length.
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Question 7 (continued): DeadShot Examples}
+
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Input} & \textbf{Output} & \textbf{Explanation} \\
+\hline
+$A = [5,4,7,6]$ & $0$ & Team Kabir: $5+6=11$ \\
+ &  & Team Piyush: $4+7=11$ \\
+\hline
+$A = [10,1,1]$ & $8$ & Team Kabir: $10$ \\
+ &  & Team Piyush: $1+1=2$ \\
+\hline
+$A = [3,4,2,2]$ & $1$ & Team Kabir: $4+2=6$ \\
+ &  & Team Piyush: $3+2=5$ \\
+\hline
+\end{tabular}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Question 7 (continued): DeadShot Tasks}
+
+\textbf{(a)} Write pseudocode implementing \texttt{balanced\_teams(A)}. You are not allowed to import libraries or use any language-specific features.
+
+\vspace{0.4cm}
+
+\textbf{(b)} Argue that your algorithm runs in $O(n 2^{n/2})$ time.
+
+\vspace{0.4cm}
+
+\textbf{(c)} Argue the correctness of your implementation.
+
+\end{frame}
+
+\begin{frame}
+\end{frame}
+
+\begin{frame}
+\end{frame}
+
+\end{document}

@@ -1,0 +1,12 @@
+\frametitle{Question 7 (continued): DeadShot Tasks}
+
+\textbf{(a)} Write pseudocode implementing \texttt{balanced\_teams(A)}. You are not allowed to import libraries or use any language-specific features.
+
+\vspace{0.4cm}
+
+\textbf{(b)} Argue that your algorithm runs in $O(n 2^{n/2})$ time.
+
+\vspace{0.4cm}
+
+\textbf{(c)} Argue the correctness of your implementation.
+
