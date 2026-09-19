@@ -59,6 +59,19 @@
         {"name": "Problem Set 2", "label": "PDF", "link": "tutorial-5/problem-sheet-2.pdf"},
         {"name": "Problem Sheet 2 Solutions", "label": "PDF", "link": "tutorial-5/problem-sheet-2-ans.pdf"}
       ]
+    },
+    {
+      "id": 6,
+      "title": "Greedy, DP and the March to Midsem",
+      "date": "Fri, Sep 18",
+      "TA": "Arjun",
+      "description":"We provided problem sets for Greedy, DP and a mock midsem. We also had Quiz 4.",
+      "resources": [
+        {"name": "Problem Set 3", "label": "PDF", "link": "tutorial-6/problem-sheet-3.pdf"},
+        {"name": "Problem Sheet 4", "label": "PDF", "link": "tutorial-6/problem-sheet-4.pdf"},
+        {"name": "Quiz 4", "label": "PDF", "link": "tutorial-6/quiz-4.pdf"},
+        {"name": "Mock Midsem", "label": "PDF", "link": "tutorial-6/mock-mid.pdf"}
+      ]
     }
   ]
 }
