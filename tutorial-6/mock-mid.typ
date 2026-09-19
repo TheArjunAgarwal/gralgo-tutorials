@@ -1,7 +1,7 @@
 #import "../style.typ": *
 
 #show: main.with(
-  title: [Algorithmic Design Techniques],
+  title: [Graduate Algorithms],
   subtitle: [What Your Midsem Could Look Like...],
   date: datetime.today(),
   report-style : false
