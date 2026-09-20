@@ -70,7 +70,8 @@
         {"name": "Problem Set 3", "label": "PDF", "link": "tutorial-6/problem-sheet-3.pdf"},
         {"name": "Problem Sheet 4", "label": "PDF", "link": "tutorial-6/problem-sheet-4.pdf"},
         {"name": "Quiz 4", "label": "PDF", "link": "tutorial-6/quiz-4.pdf"},
-        {"name": "Mock Midsem", "label": "PDF", "link": "tutorial-6/mock-mid.pdf"}
+        {"name": "Mock Midsem", "label": "PDF", "link": "tutorial-6/mock-mid.pdf"},
+        {"name": "Mock Midsem Solutions", "label": "PDF", "link": "tutorial-6/mock-mid-sol.pdf"}
       ]
     }
   ]
