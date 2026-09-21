@@ -61,7 +61,7 @@ $
 
   (b) Argue the correctness of your algorithm. #h(1fr) *(50 marks)*
 ]
-This problem is inspired by the finals of Polish Olympiad in Informatics (which was inturn inspired by the approximation algorithm for a NP-Complete problem called CLIQUE).
+This problem is inspired by the 2011 finals of Polish Olympiad in Informatics (which was inturn inspired by the approximation algorithm for a NP-Complete problem called CLIQUE).
 
 We can formally say that given a graph $G$ on $n$ vertices with a clique of size $(2n)/3$ $K_((2n)/3)$ appearing as a subgraph, we want to find a set of vertices $T subset.eq V$ such that the induced subgraph on $T$ is isomorphic to $K_(n/3)$.
 
@@ -76,7 +76,7 @@ We claim this simple algorithm works:
     + for all $u, v in V$:
       + if $u v in.not E$ and team[$u$] = True and team[$v$] = True:
         + team[$u$] = False
-        + team[$u$] = True
+        + team[$v$] = False
     + return team
 ]
 
