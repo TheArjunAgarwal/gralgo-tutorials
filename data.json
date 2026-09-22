@@ -73,6 +73,16 @@
         {"name": "Mock Midsem", "label": "PDF", "link": "tutorial-6/mock-mid.pdf"},
         {"name": "Mock Midsem Solutions", "label": "PDF", "link": "tutorial-6/mock-mid-sol.pdf"}
       ]
+    },
+    {
+      "id": 7,
+      "title": "Midsem Week!",
+      "date": "Mon, Sep 21",
+      "TA": "Vardhan",
+      "description":"MIDSEM!",
+      "resources": [
+        {"name": "Unofficial Midsem Solutions", "label": "PDF", "link": "tutorial-7/midsem-solutions.pdf"}
+      ]
     }
   ]
 }
