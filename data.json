@@ -83,6 +83,28 @@
       "resources": [
         {"name": "Unofficial Midsem Solutions", "label": "PDF", "link": "tutorial-7/midsem-solutions.pdf"}
       ]
+    },
+    {
+      "id": 8,
+      "title": "DFS, BFS and (Strongly) Connected Components",
+      "date": "Mon, Sep 28",
+      "TA": "Arjun",
+      "description":"We discussed DFS, BFS, their applications as well as algorithms to find (Strongly) Connected Components. As the tutorial was taken on board, we don't have slides to share and you'll have to make do with my (illegible) scanned lecture notes.",
+      "resources": [
+        {"name": "Notes", "label": "PDF", "link": "tutorial-8/scan.pdf"}
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Dynamic Programming",
+      "date": "Mon, Oct 12",
+      "TA": "Vardhan",
+      "description":"We discussed some problems from the DP problem set and had Quiz 5 (on Wed, Oct 14) regarding the same.",
+      "resources": [
+        {"name": "Slides", "label": "PDF", "link": "tutorial-9/tut-9.pdf"},
+        {"name": "Quiz 5", "label": "PDF", "link": "tutorial-9/quiz-5.pdf"},
+        {"name": "Quiz 5 Solutions", "label": "PDF", "link": "tutorial-9/quiz-5-sol.pdf"}
+      ]
     }
   ]
 }
