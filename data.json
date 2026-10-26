@@ -105,6 +105,29 @@
         {"name": "Quiz 5", "label": "PDF", "link": "tutorial-9/quiz-5.pdf"},
         {"name": "Quiz 5 Solutions", "label": "PDF", "link": "tutorial-9/quiz-5-sol.pdf"}
       ]
+    },
+    {
+      "id": 9,
+      "title": "Dynamic Programming",
+      "date": "Mon, Oct 12",
+      "TA": "Vardhan",
+      "description":"We discussed some problems from the DP problem set and had Quiz 5 (on Wed, Oct 14) regarding the same.",
+      "resources": [
+        {"name": "Slides", "label": "PDF", "link": "tutorial-9/tut-9.pdf"},
+        {"name": "Quiz 5", "label": "PDF", "link": "tutorial-9/quiz-5.pdf"},
+        {"name": "Quiz 5 Solutions", "label": "PDF", "link": "tutorial-9/quiz-5-sol.pdf"}
+      ]
+    },
+{
+      "id": 10,
+      "title": "Min-Cut Max-Flow",
+      "date": "Mon, Oct 26",
+      "TA": "Arjun",
+      "description":"We discussed proved the min-cut max-flow theorem as well as Ford-Fulkerson and Edmonds-Karp Algorithm. We then did some modification of flow questions.",
+      "resources": [
+        {"name": "Slides", "label": "PDF", "link": "tutorial-10/tut-10.pdf"},
+        {"name": "Problem Sheet 5", "label": "PDF", "link": "tutorial-10/problem-sheet-5.pdf"}
+      ]
     }
   ]
 }
