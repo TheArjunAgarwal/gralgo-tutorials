@@ -123,10 +123,21 @@
       "title": "Min-Cut Max-Flow",
       "date": "Mon, Oct 26",
       "TA": "Arjun",
-      "description":"We discussed proved the min-cut max-flow theorem as well as Ford-Fulkerson and Edmonds-Karp Algorithm. We then did some modification of flow questions.",
+      "description":"We discussed and proved the min-cut max-flow theorem as well as Ford-Fulkerson and Edmonds-Karp Algorithm. We then did some modification of flow questions.",
       "resources": [
         {"name": "Slides", "label": "PDF", "link": "tutorial-10/tut-10.pdf"},
         {"name": "Problem Sheet 5", "label": "PDF", "link": "tutorial-10/problem-sheet-5.pdf"}
+      ]
+    },
+  {
+      "id": 11,
+      "title": "Applications of Flow",
+      "date": "Mon, Nov 2",
+      "TA": "Arjun",
+      "description":"We discussed some applications of flow.",
+      "resources": [
+        {"name": "Slides", "label": "PDF", "link": "tutorial-11/tut11.pdf"},
+        {"name": "Problem Sheet 6", "label": "PDF", "link": "tutorial-10/problem-sheet-6.pdf"}
       ]
     }
   ]
