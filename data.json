@@ -137,7 +137,7 @@
       "description":"We discussed some applications of flow.",
       "resources": [
         {"name": "Slides", "label": "PDF", "link": "tutorial-11/tut11.pdf"},
-        {"name": "Problem Sheet 6", "label": "PDF", "link": "tutorial-10/problem-sheet-6.pdf"}
+        {"name": "Problem Sheet 6", "label": "PDF", "link": "tutorial-11/problem-sheet-6.pdf"}
       ]
     }
   ]
