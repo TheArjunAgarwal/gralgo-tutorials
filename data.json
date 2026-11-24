@@ -106,27 +106,17 @@
         {"name": "Quiz 5 Solutions", "label": "PDF", "link": "tutorial-9/quiz-5-sol.pdf"}
       ]
     },
-    {
-      "id": 9,
-      "title": "Dynamic Programming",
-      "date": "Mon, Oct 12",
-      "TA": "Vardhan",
-      "description":"We discussed some problems from the DP problem set and had Quiz 5 (on Wed, Oct 14) regarding the same.",
-      "resources": [
-        {"name": "Slides", "label": "PDF", "link": "tutorial-9/tut-9.pdf"},
-        {"name": "Quiz 5", "label": "PDF", "link": "tutorial-9/quiz-5.pdf"},
-        {"name": "Quiz 5 Solutions", "label": "PDF", "link": "tutorial-9/quiz-5-sol.pdf"}
-      ]
-    },
 {
       "id": 10,
       "title": "Min-Cut Max-Flow",
       "date": "Mon, Oct 26",
       "TA": "Arjun",
-      "description":"We discussed and proved the min-cut max-flow theorem as well as Ford-Fulkerson and Edmonds-Karp Algorithm. We then did some modification of flow questions.",
+      "description":"We discussed and proved the min-cut max-flow theorem as well as Ford-Fulkerson and Edmonds-Karp Algorithm. We then did some modification of flow questions. We also had quiz 6 on the above.",
       "resources": [
         {"name": "Slides", "label": "PDF", "link": "tutorial-10/tut-10.pdf"},
-        {"name": "Problem Sheet 5", "label": "PDF", "link": "tutorial-10/problem-sheet-5.pdf"}
+        {"name": "Problem Sheet 5", "label": "PDF", "link": "tutorial-10/problem-sheet-5.pdf"},
+        {"name": "Quiz 6", "label": "PDF", "link": "tutorial-10/quiz-6.pdf"},
+        {"name": "Quiz 6 Solutions", "label": "PDF", "link": "tutorial-10/quiz-6-sol.pdf"}
       ]
     },
   {
@@ -137,7 +127,21 @@
       "description":"We discussed some applications of flow.",
       "resources": [
         {"name": "Slides", "label": "PDF", "link": "tutorial-11/tut11.pdf"},
-        {"name": "Problem Sheet 6", "label": "PDF", "link": "tutorial-11/problem-sheet-6.pdf"}
+        {"name": "Problem Sheet 6", "label": "PDF", "link": "tutorial-11/problem-sheet-6.pdf"},
+        {"name": "Quiz 7", "label": "PDF", "link": "tutorial-11/quiz-7.pdf"},
+        {"name": "Quiz 7 Solutions", "label": "PDF", "link": "tutorial-11/quiz-7-sol.pdf"}
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Pre Endsem Week!",
+      "date": "",
+      "TA": "Arjun and Vardhan",
+      "description":"The last week of the course! We discuss NP Hardness and Reductions. We also have a makeup quiz and some mocks.",
+      "resources": [
+        {"name": "Quiz 8", "label": "PDF", "link": "tutorial-12/quiz-8.pdf"},
+        {"name": "Mock Endsem (Arjun)", "label": "PDF", "link": "tutorial-12/mock-end.pdf"},
+        {"name": "Mock Endsem Solutions (Arjun)", "label": "PDF", "link": "tutorial-12/mock-end-sol.pdf"}
       ]
     }
   ]
