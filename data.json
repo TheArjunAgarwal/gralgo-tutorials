@@ -139,9 +139,12 @@
       "TA": "Arjun and Vardhan",
       "description":"The last week of the course! We discuss NP Hardness and Reductions. We also have a makeup quiz and some mocks.",
       "resources": [
+        {"name": "NP Hardness Notes", "label": "PDF", "link": "tutorial-12/np-hardness.pdf"},
         {"name": "Quiz 8", "label": "PDF", "link": "tutorial-12/quiz-8.pdf"},
         {"name": "Mock Endsem (Arjun)", "label": "PDF", "link": "tutorial-12/mock-end.pdf"},
-        {"name": "Mock Endsem Solutions (Arjun)", "label": "PDF", "link": "tutorial-12/mock-end-sol.pdf"}
+        {"name": "Mock Endsem Solutions (Arjun)", "label": "PDF", "link": "tutorial-12/mock-end-sol.pdf"},
+        {"name": "Mock Endsem (Vardhan)", "label": "PDF", "link": "tutorial-12/mock-test.pdf"},
+        {"name": "Mock Endsem Solutions (Vardhan)", "label": "PDF", "link": "tutorial-12/mock-test-sol.pdf"}
       ]
     }
   ]
