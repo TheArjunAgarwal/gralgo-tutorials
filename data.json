@@ -139,7 +139,7 @@
       "TA": "Arjun and Vardhan",
       "description":"The last week of the course! We discuss NP Hardness and Reductions. We also have a makeup quiz and some mocks.",
       "resources": [
-        {"name": "Problem Sheet 7", "label": "PDF", "link": "tutorial-12/Practise Sheet 7.pdf"},
+        {"name": "Problem Sheet 7 + NP Hardness Notes", "label": "PDF", "link": "tutorial-12/Practise Sheet 7.pdf"},
         {"name": "Quiz 8", "label": "PDF", "link": "tutorial-12/quiz-8.pdf"},
         {"name": "Quiz 8 Solutions", "label": "PDF", "link": "tutorial-12/Quiz 8 Solution.pdf"},
         {"name": "Mock Endsem (Arjun)", "label": "PDF", "link": "tutorial-12/mock-end.pdf"},
@@ -147,15 +147,14 @@
         {"name": "Mock Endsem (Vardhan)", "label": "PDF", "link": "tutorial-12/mock-test.pdf"},
         {"name": "Mock Endsem Solutions (Vardhan)", "label": "PDF", "link": "tutorial-12/mock-test-sol.pdf"}
       ]
-    }
+    },
     {
       "id": 13,
-      "title": "Endsem Week!",
+      "title": "Endsem!",
       "date": "Tue, 24 Nov",
       "TA": "Vardhan",
-      "description":"",
+      "description":"Unofficial Endsem solutions!",
       "resources": [
-        {"name": "NP Hardness Notes (with solutions to Problem Sheet 7)", "label": "PDF", "link": "https://github.com/VKR29/Graduate-Algorithm-GRAL/blob/main/NP%20Hardness%20-%20Notes%20and%20Problems.pdf"},
         {"name": "Endsem Solution", "label": "PDF", "link": "tutorial-13/GRAL26_Endsem_Solution.pdf"}
       ]
     }
